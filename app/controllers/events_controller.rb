@@ -12,7 +12,7 @@ class EventsController < ApplicationController
   private
 
   def event_params
-    parmas.require(:event).permit(:title,:start,:end)
+    params.require(:event).permit(:title,:start,:end)
   end
 
 end
