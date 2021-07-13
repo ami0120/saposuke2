@@ -14,7 +14,14 @@ document.addEventListener('DOMContentLoaded', function() {
       center: 'title',
       right: 'dayGridMonth,timeGridWeek,timeGridDay'
     },
-  
+    events: [
+      { 
+        title: 'The Title', 
+        start: '2021-07-19',
+        end: '2021-07-19' 
+      }
+    ],
+
     select: function(info) {
       $('#new_event').modal('show');
     }
