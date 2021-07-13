@@ -14,11 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
       center: 'title',
       right: 'dayGridMonth,timeGridWeek,timeGridDay'
     },
-    eventClick: function(info) {
-      alert('clicked ' + info.dateStr);
-    },
+  
     select: function(info) {
-      alert('selected ' + info.startStr + ' to ' + info.endStr);
+      $('#new_event').modal('show');
     }
   });
 
