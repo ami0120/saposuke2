@@ -1,24 +1,25 @@
-# README
+## テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## events テーブル
 
-Things you may want to cover:
+| Column             | Type     | Options     |
+| ------------------ | ------   | ----------- |
+| title              | string   | null: false |
+| start              | datetime | null: false |
+| end                | datetime | null: false |
 
-* Ruby version
+### Association
 
-* System dependencies
+- belongs_to :user
 
-* Configuration
+## users テーブル
 
-* Database creation
+| Column   | Type     | Options     |
+| ------   | ------   | ----------- |
+| name     | string   | null: false |
+| birthday | datetime | null: false |
+| dept     | string   | null: false |
 
-* Database initialization
+### Association
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- has_many :events
